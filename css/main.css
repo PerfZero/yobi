@@ -339,6 +339,8 @@ button {
 
 @media only screen and (max-width: 576px) {
   .container {
+    width: 90%; /* Ширина контейнера будет составлять 90% ширины экрана */
+    margin: 0 auto;
     padding-right: 10px;
     display: flex;
     width: max-content;
@@ -488,5 +490,12 @@ button {
     right: 488px;
     top: 832px;
     width: 22px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  body {
+    zoom: 0.65; /* Измените это значение по вашему усмотрению */
+    /* или */
   }
 }
