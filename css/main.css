@@ -340,6 +340,12 @@ button {
 }
 
 @media only screen and (max-width: 576px) {
+
+    body {
+    zoom: 0.6; /* Измените это значение по вашему усмотрению */
+    /* или */
+    transform: scale(1);
+  }
   .container {
     padding-right: 10px;
     display: flex;
