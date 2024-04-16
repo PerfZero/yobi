@@ -1,0 +1,494 @@
+@font-face {
+  font-weight: 100; /* Соответствует значению normal */
+  font-family: MuseoSans;
+  src: url("../fonts/MuseoSansCyrl_100.otf");
+}
+
+@font-face {
+  font-weight: 300; /* Соответствует значению bold */
+  font-family: MuseoSans;
+  src: url("../fonts/MuseoSansCyrl_300.otf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: MuseoSans;
+  src: url("../fonts/MuseoSansCyrl_500.otf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: MuseoSans;
+  src: url("../fonts/MuseoSansCyrl_700.otf");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: MuseoSans;
+  src: url("../fonts/MuseoSansCyrl_900.otf");
+}
+
+body {
+  position: relative;
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+i {
+  font-weight: 100;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #203842;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textarea without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-family: "MuseoSans", Arial, sans-serif;
+}
+.container {
+  max-width: auto;
+  max-height: 100%;
+  padding: 0;
+  display: flex;
+}
+.section {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.section_ru {
+  flex: 1;
+  border-radius: 10px;
+  max-width: 620px;
+}
+
+.section-center {
+  padding-top: 118px;
+}
+
+.section-center-ru {
+  padding-top: 50px;
+}
+
+.title-logo {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-logo-ru {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text1-logo {
+  font-size: 95px;
+  font-weight: 500;
+}
+
+.text1-logo-ru {
+  font-size: 95px;
+  font-weight: 900;
+}
+
+.text1-desk {
+  font-size: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.social a {
+  margin: 0 10px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-desk2 {
+  font-size: 46px;
+  padding-bottom: 107px;
+  padding-top: 47px;
+  font-weight: 700;
+}
+
+.text-desk2-ru {
+  padding-top: 37px;
+  padding-bottom: 80px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-description-ru {
+  font-size: 35px;
+}
+
+.block-text {
+  padding-right: 10px;
+  padding-top: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.block-text-ru {
+  padding-right: 10px;
+  padding-top: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.buttons {
+  margin-top: 20px;
+}
+
+.img {
+  width: auto;
+}
+
+.man-rolls {
+  z-index: -1;
+  position: absolute;
+}
+
+.logo {
+  display: flex;
+}
+
+button {
+  border: 0px;
+  color: #fff;
+  margin-bottom: 30px;
+  height: 41px;
+  font: inherit;
+  background-color: #f52341;
+  width: 239px;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.lang-desk {
+  padding: 80px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.section-title {
+  padding-right: 45px;
+  font-size: 75px;
+  font-weight: 900;
+  color: #000;
+  line-height: 100%;
+}
+
+.section-title-ru {
+  padding-right: 45px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #000;
+  line-height: 100%;
+}
+
+.section-description-color {
+  font-size: 45px;
+  font-weight: 900;
+  color: #f52341;
+}
+
+.section-description-color-ru {
+  font-size: 34px;
+  font-weight: 900;
+  color: #f52341;
+}
+
+.section-description {
+  font-size: 52px;
+}
+
+.lang-mobile {
+  display: none;
+}
+
+.star_1 {
+  position: absolute;
+  right: -1074px;
+  top: 41px;
+}
+
+.star_2 {
+  position: absolute;
+  right: 14px;
+  top: 359px;
+}
+
+.star_3 {
+  position: absolute;
+  right: -654px;
+  top: 969px;
+}
+
+.star_4 {
+  position: absolute;
+  right: -774px;
+  top: 359px;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-right: 10px;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+  }
+
+  .logo_g {
+    height: 150px;
+  }
+
+  .title-logo {
+    padding-left: 10px;
+  }
+
+  .block {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+    line-height: 100%;
+  }
+
+  .section-title-ru {
+    font-size: 28px;
+    font-weight: 900;
+    color: #000;
+    line-height: 100%;
+  }
+
+  .section-center {
+    padding-top: 50px;
+  }
+
+  .section-description-color {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f52341;
+    padding-left: 126px;
+  }
+
+  .section-description-color-ru {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f52341;
+  }
+
+  .section-description {
+    font-size: 22px;
+  }
+
+  .section-description-ru {
+    font-size: 16px;
+  }
+
+  .block-text {
+    padding-top: 1px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 190px;
+  }
+
+  .block-text-ru {
+    padding-top: 1px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 190px;
+  }
+
+  .text1-logo {
+    font-size: 70px;
+  }
+
+  .title-logo-ru {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text1-logo-ru {
+    font-size: 60px;
+  }
+
+  .man-rolls {
+    margin-top: 501px;
+    margin-left: 179px;
+    height: 680px;
+    transform: scale(-1, 1);
+  }
+
+  .text-desk2 {
+    padding-left: 22px;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .text-desk2-ru {
+    padding-left: 22px;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .lang-desk {
+    display: none;
+  }
+
+  .lang-mobile {
+    align-self: end;
+    display: flex;
+  }
+
+  .star_1 {
+    position: absolute;
+    right: 244px;
+    top: 11px;
+    width: 22px;
+  }
+
+  .star_2 {
+    position: absolute;
+    right: 92px;
+    top: 404px;
+    width: 22px;
+  }
+
+  .star_3 {
+    width: 22px;
+    position: absolute;
+    right: 314px;
+    top: 840px;
+  }
+
+  .star_4 {
+    position: absolute;
+    right: 488px;
+    top: 832px;
+    width: 22px;
+  }
+}
